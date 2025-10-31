@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<link rel="manifest" href="./manifest.json">
+<title>Tibb-e-Nabvi — PWA Explorer</title>
+<style>
+:root{--bg:#071026;--card:#0b1220;--muted:#94a3b8;--accent:#10b981;--glass: rgba(255,255,255,0.04);--glass-2: rgba(255,255,255,0.02);--glass-border: rgba(255,255,255,0.06);font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; color-scheme: dark;}
+*{box-sizing:border-box}
+html,body{height:100%; margin:0; background:linear-gradient(180deg,#071026 0%, #071b2a 60%); color:#e6eef6;}
+.app{display:flex; flex-direction:column; height:100vh; gap:10px; padding:12px;}
+
+/* Mobile-first: sidebar is horizontal tabs */
+.header-top{display:flex; gap:8px; align-items:center; justify-content:space-between;}
+.brand{display:flex; gap:10px; align-items:center}
+.logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021;box-shadow:0 6px 20px rgba(16,185,129,0.12)}
+.title-block{display:flex; flex-direction:column}
+.search{margin-top:8px; position:relative; width:100%}
+.search input{width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--glass-border); background:transparent; color:inherit; outline:none; font-size:15px}
+
+.tabs{display:flex; gap:8px; overflow-x:auto; padding:8px 2px; margin-top:6px;}
+.tab{flex:0 0 auto; padding:10px 12px; border-radius:12px; background:var(--glass); border:1px solid var(--glass-border); font-size:14px; cursor:pointer}
+.tab.active{background:linear-gradient(90deg, rgba(16,185,129,0.12), rgba(124,58,237,0.04));}
+
+.content{flex:1; overflow:auto; padding:6px; display:grid; grid-template-columns: 1fr; gap:10px;}
+
+/* Card */
+.card{display:flex; gap:10px; align-items:flex-start; padding:10px; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid var(--glass-border);}
+.thumb{width:84px; height:84px; border-radius:10px; background:var(--glass-2); border:1px solid rgba(255,255,255,0.03); display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0}
+.thumb img{width:100%; height:100%; object-fit:cover}
+.card-body{flex:1}
+.title{font-weight:700; font-size:15px; margin-bottom:6px}
+.remedy{font-size:13px; color:var(--muted); margin-bottom:6px}
+.meta{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:6px}
+.pill{background:transparent; border:1px solid rgba(255,255,255,0.04); padding:6px 8px; border-radius:999px; font-size:12px; color:var(--muted)}
+.details{font-size:13px; color:#dbeafe; line-height:1.35; margin-top:6px}
+.footer{display:flex; gap:8px; align-items:center; margin-top:8px; justify-content:space-between}
+.btn{padding:10px 12px; border-radius:10px; background:var(--glass); border:1px solid var(--glass-border); color:var(--muted); font-weight:700; font-size:14px}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#7c3aed); color:#021; box-shadow:0 8px 30px rgba(16,185,129,0.12)}
+
+.empty{padding:40px; text-align:center; color:var(--muted)}
+
+/* Larger screens */
+@media(min-width:900px){ .app{flex-direction:row;} .tabs{flex-direction:column; width:260px; padding:6px;} .content{grid-template-columns: repeat(auto-fill,minmax(320px,1fr));} .header-top{flex-direction:column; gap:6px;} .search{width:260px;} }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div style="display:flex; flex-direction:column; gap:6px;">
+    <div class="header-top">
+      <div style="display:flex; align-items:center; gap:10px; justify-content:space-between;">
+        <div class="brand"><div class="logo">T</div><div class="title-block"><div id="appTitle" style="font-weight:700">Tibb-e-Nabvi Explorer</div><div id="appSub" style="font-size:13px;color:var(--muted)">Traditional remedies — visual edition</div></div></div>
+        <div style="display:flex; gap:8px; align-items:center;"><button id="langBtn" class="btn">EN</button><button id="installBtn" class="btn">Install</button></div>
+      </div>
+      <div class="search"><input id="searchInput" placeholder="Search disease or remedy..." aria-label="Search" /></div>
+    </div>
+
+    <div class="tabs" id="tabs"></div>
+  </div>
+
+  <main class="content" id="contentArea">
+    <div class="empty" id="emptyState">Select a body part to begin or search above.</div>
+  </main>
+</div>
+
+<script>
+// PWA UI script with i18n and service worker registration
+const locales = {};
+const availableLangs = ['en','ar','ur','zh','fr','ja','es','ru'];
+let currentLang = 'en';
+async function loadLocale(code){
+  if(locales[code]) return locales[code];
+  try{
+    const r = await fetch('./locales/'+code+'.json');
+    const j = await r.json();
+    locales[code] = j;
+    return j;
+  }catch(e){
+    console.warn('Locale load failed', code, e);
+    return locales['en'];
+  }
+}
+
+function t(key){ return (locales[currentLang] && locales[currentLang][key]) || locales['en'][key] || key; }
+
+// UI elements
+const tabs = document.getElementById('tabs');
+const contentArea = document.getElementById('contentArea');
+const appTitle = document.getElementById('appTitle');
+const appSub = document.getElementById('appSub');
+const searchInput = document.getElementById('searchInput');
+const langBtn = document.getElementById('langBtn');
+const installBtn = document.getElementById('installBtn');
+const emptyState = document.getElementById('emptyState');
+
+let datasets = {};
+let filenames = [];
+let currentPart = null;
+
+// Load locale and then dataset
+async function init(){
+  await loadLocale('en');
+  currentLang = navigator.language.split('-')[0];
+  if(!availableLangs.includes(currentLang)) currentLang='en';
+  await loadLocale(currentLang);
+  applyLocale();
+  await loadIndexAndData();
+}
+function applyLocale(){
+  document.documentElement.lang = currentLang;
+  appTitle.textContent = t('app_title');
+  appSub.textContent = t('subtitle');
+  searchInput.placeholder = t('search_placeholder');
+  emptyState.textContent = t('select_prompt');
+  langBtn.textContent = currentLang.toUpperCase();
+}
+
+async function loadIndexAndData(){
+  try{
+    const idx = await fetch('index.json').then(r=>r.json());
+    filenames = idx.files || [];
+    // load each file
+    for(const f of filenames){
+      try{
+        const j = await fetch(f).then(r=>r.json());
+        datasets[f] = j;
+      }catch(e){console.warn('Failed to load', f, e);}
+    }
+    renderTabs();
+    // select first available
+    const first = Object.keys(datasets)[0];
+    if(first) selectPart(first);
+  }catch(e){
+    contentArea.innerHTML = '<div class="empty">'+t('loading')+'</div>';
+    console.error(e);
+  }
+}
+
+function renderTabs(){
+  tabs.innerHTML='';
+  for(const f of Object.keys(datasets)){
+    const d = datasets[f];
+    const btn = document.createElement('button');
+    btn.className='tab';
+    btn.textContent = d.body_part || f;
+    btn.onclick = ()=> selectPart(f);
+    tabs.appendChild(btn);
+  }
+}
+
+function selectPart(fname){
+  currentPart = fname;
+  // highlight tabs
+  [...tabs.children].forEach(c=> c.classList.toggle('active', c.textContent === (datasets[fname].body_part)));
+  renderContent(datasets[fname].diseases || []);
+}
+
+function renderContent(list){
+  contentArea.innerHTML='';
+  if(!list || list.length===0){ contentArea.innerHTML='<div class="empty">'+t('no_matches')+'</div>'; return; }
+  const q = (searchInput.value||'').trim().toLowerCase();
+  let shown=0;
+  for(const item of list){
+    const title = item.disease || '';
+    const remedy = item.remedy || '';
+    const hay = (title+' '+remedy+' '+(item.remedy_description||'')+' '+(item.method||'')).toLowerCase();
+    if(q && !hay.includes(q)) continue;
+    shown++;
+    const card = document.createElement('div'); card.className='card';
+    const thumb = document.createElement('div'); thumb.className='thumb';
+    if(item.remedy_image_url){ const img = document.createElement('img'); img.src=item.remedy_image_url; img.alt=item.remedy||title; thumb.appendChild(img);} else { thumb.textContent = t('no_image'); thumb.style.padding='10px'; }
+    const body = document.createElement('div'); body.className='card-body';
+    const h = document.createElement('div'); h.className='title'; h.textContent = title;
+    const r = document.createElement('div'); r.className='remedy'; r.innerHTML = '<strong>'+t('details')+':</strong> ' + remedy;
+    const meta = document.createElement('div'); meta.className='meta';
+    if(item.dose) { const p=document.createElement('span'); p.className='pill'; p.textContent = t('dose')+': '+item.dose; meta.appendChild(p); }
+    if(item.timing) { const p=document.createElement('span'); p.className='pill'; p.textContent = t('timing')+': '+item.timing; meta.appendChild(p); }
+    if(item.source) { const p=document.createElement('span'); p.className='pill'; p.textContent = t('source'); meta.appendChild(p); }
+    const details = document.createElement('div'); details.className='details'; details.innerHTML = '<div style="color:var(--muted); margin-bottom:6px;">'+escapeHtml(item.remedy_description||'')+'</div><div><strong>Method:</strong> '+escapeHtml(item.method||'—')+'</div><div style="margin-top:6px"><a href="'+getMoreImagesLink(item.remedy_description)+'" target="_blank">'+t('more_images')+'</a></div>';
+    const footer = document.createElement('div'); footer.className='footer';
+    const btn = document.createElement('button'); btn.className='btn primary'; btn.textContent = t('download'); btn.onclick = ()=> downloadJSONForPart();
+    footer.appendChild(btn);
+    body.appendChild(h); body.appendChild(r); body.appendChild(meta); body.appendChild(details); body.appendChild(footer);
+    card.appendChild(thumb); card.appendChild(body);
+    contentArea.appendChild(card);
+  }
+  if(shown===0) contentArea.innerHTML = '<div class="empty">'+t('no_matches')+'</div>';
+}
+
+function escapeHtml(s){ if(!s) return ''; return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br/>'); }
+function getMoreImagesLink(desc){ if(!desc) return 'https://commons.wikimedia.org'; const m = desc.match(/More images:\s*(https?:\/\/[^\s]+)/i); return m? m[1] : 'https://commons.wikimedia.org'; }
+
+searchInput.addEventListener('input', ()=> { if(currentLang) renderContent(datasets[currentPart].diseases || []); });
+
+// language selector cycles through available languages
+langBtn.addEventListener('click', async ()=>{
+  const idx = availableLangs.indexOf(currentLang);
+  currentLang = availableLangs[(idx+1) % availableLangs.length];
+  await loadLocale(currentLang);
+  applyLocale();
+  renderContent(datasets[currentPart].diseases || []);
+});
+
+// download current part JSON
+function downloadJSONForPart(){
+  if(!currentPart) return;
+  const data = datasets[currentPart];
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download = (data.body_part||'data')+'.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+}
+
+// Install prompt handling
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e)=>{ e.preventDefault(); deferredPrompt = e; installBtn.style.display='inline-block'; });
+installBtn.addEventListener('click', async ()=>{ if(!deferredPrompt) return; deferredPrompt.prompt(); const choice = await deferredPrompt.userChoice; deferredPrompt = null; installBtn.style.display='none'; });
+
+// Register service worker
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('./service-worker.js').then(()=> console.log('SW registered')).catch(e=>console.warn('SW failed', e)); }
+
+// init
+init();
+</script>
+</body>
+</html>
