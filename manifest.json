@@ -1,11 +1,10 @@
 {
-  "name": "Tibb-e-Nabvi Healing Explorer",
+  "name": "Tibb-e-Nabvi Explorer",
   "short_name": "Tibb-e-Nabvi",
-  "start_url": "./ui_pwa.html",
+  "start_url": "./ui_pwa_v5.html",
   "display": "standalone",
-  "background_color": "#071026",
+  "background_color": "#fbfdf9",
   "theme_color": "#10b981",
-  "description": "Interactive visual explorer of prophetic remedies (Tibb-e-Nabvi)",
   "icons": [
     {
       "src": "icons/icon-192.png",

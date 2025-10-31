@@ -1,2 +1,2 @@
-Tibb-e-Nabvi PWA — Full Local Package
-Open ui_pwa.html in a modern browser. This package contains the full dataset under /data.
+Tibb-e-Nabvi PWA v5 — final stable build
+Open ui_pwa_v5.html on a web host (GitHub Pages recommended). Installable and offline-capable.
