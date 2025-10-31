@@ -1,0 +1,35 @@
+{
+  "body_part": "Digestive System",
+  "diseases": [
+    {
+      "disease": "Constipation / Dyspepsia",
+      "remedy": "Honey in warm water (aperient), rest and moderation of food",
+      "method": "Drink warm water sweetened with honey to soften stomach and loosen bowels",
+      "dose": "1–2 tbsp honey in 1 cup (200 ml) warm water; repeat until relief",
+      "timing": "On empty stomach; Prophet suggested repeating as needed; general wellness 3×/month noted",
+      "source": "Natural Healing with the Medicine of the Prophet — case of bowel problem and honey remedy",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Honey in warm water is a soothing tonic; visually a golden syrup dissolving into warm liquid with sweet aroma. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    },
+    {
+      "disease": "Dropsy (edema / abdominal distention)",
+      "remedy": "She-camel’s milk and urine (historical), diuretics and laxatives",
+      "method": "Traditionally drink she-camel milk and small amount of urine during estrus as diuretic; modern equivalents: medically approved diuretics",
+      "dose": "Narration mentions cups of milk and small urine portions; text descriptive rather than clinical (~½ cup milk plus small urine quantity cited historically)",
+      "timing": "Until swelling reduces; traditionally when herd feeding on certain herbs improves efficacy",
+      "source": "Natural Healing with the Medicine of the Prophet — Section IV: Treatment of Dropsy (Hadith of Arab visitors). Also appears in Tib-e-Nabvi",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Camel_milk_in_a_glass.jpg",
+      "remedy_description": "Camel milk is a white, slightly opaque liquid with a thin, watery texture and a mildly salty, tangy taste; historical remedies sometimes mention camel urine alongside milk. More images: https://commons.wikimedia.org/wiki/Category:Camel_milk"
+    },
+    {
+      "disease": "Obstruction of liver/kidney/bladder (humoral congestion)",
+      "remedy": "Honey as solvent, dietary purgatives, laxatives",
+      "method": "Use honey to open pores and help purgation combined with diet adjustments",
+      "dose": "1–2 tbsp honey in warm water; diet per practitioner guidance",
+      "timing": "Supportive regimen until balance restored",
+      "source": "Natural Healing with the Medicine of the Prophet — honey benefits and organ obstructions",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Honey acts as a natural solvent and mild laxative when taken warm; golden and viscous with sweet taste. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "body_part": "Heart & Circulatory",
+  "diseases": [
+    {
+      "disease": "Enlarged heart / Weak heart",
+      "remedy": "Dates (nutritive therapy), dietary and humoral measures",
+      "method": "Consume beneficial dates (varieties like Ajwa highlighted for protection) and follow heart-strengthening diet",
+      "dose": "Traditionally 7 Ajwa dates cited for protection; general daily date consumption supportive",
+      "timing": "Morning on an empty stomach suggested for nutritive benefit",
+      "source": "Natural Healing with the Medicine of the Prophet — Section XVI: Benefits of Dates",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Ajwa_dates_from_Madinah.jpg",
+      "remedy_description": "Dates (e.g., Ajwa) are soft, wrinkled fruits, dark brown in color, with a sweet, caramel-like taste and chewy texture. More images: https://commons.wikimedia.org/wiki/Category:Dates"
+    },
+    {
+      "disease": "Blood impurities / general blood ailments",
+      "remedy": "Cupping (Hijama), purgation, honey-assisted diet",
+      "method": "Perform cupping at recommended sites; add humoral-regulating diet and honey as supportive",
+      "dose": "Cupping sessions as per traditional schedule; honey 1–2 tbsp as tonic",
+      "timing": "Hijama recommended on 17th, 19th, or 21st lunar day; morning; empty stomach",
+      "source": "Natural Healing with the Medicine of the Prophet — Hijama and honey entries",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Cupping_therapy_cups.jpg",
+      "remedy_description": "Cupping (hijama) uses small glass or bamboo cups placed on the skin to draw blood; cups are clear or tinted and create suction marks. More images: https://commons.wikimedia.org/wiki/Category:Cupping_therapy"
+    }
+  ]
+}

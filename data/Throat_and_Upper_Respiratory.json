@@ -1,0 +1,25 @@
+{
+  "body_part": "Throat & Upper Respiratory",
+  "diseases": [
+    {
+      "disease": "Throat inflammation / Tonsillitis (‘Uthra)",
+      "remedy": "Indian aloe (Qust Bahri) powdered, sometimes with myrrh and alum",
+      "method": "Powder and treat in fresh water; inhalation/sniff (su'it) through nose while lying on back to induce sneezing and dry uvula",
+      "dose": "Small pinch of prepared powder per use",
+      "timing": "Twice daily or as indicated until inflammation subsides",
+      "source": "Natural Healing with the Medicine of the Prophet — Aisha narration about 'uthra' (throat inflammation)",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Saussurea_costus_roots.jpg",
+      "remedy_description": "Indian costus (Qust) is a brown, knobbly aromatic root, bitter in taste and used as a powdered inhalant or remedy. More images: https://commons.wikimedia.org/wiki/Category:Costus"
+    },
+    {
+      "disease": "Phlegmy cough and catarrh",
+      "remedy": "Honey in warm water, rest, expectorant diet",
+      "method": "Drink warm water sweetened with honey to loosen phlegm and soften stomach",
+      "dose": "1–2 tablespoons honey in 1 cup warm water; frequency per severity",
+      "timing": "Often recommended on empty stomach or morning; repeat as needed",
+      "source": "Natural Healing with the Medicine of the Prophet — honey uses",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Honey mixed in warm water forms a sweet, aromatic drink that is smooth and viscous; used historically to soothe throats and ease coughs. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    }
+  ]
+}

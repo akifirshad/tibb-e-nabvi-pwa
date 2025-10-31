@@ -1,0 +1,35 @@
+{
+  "body_part": "Head & Brain",
+  "diseases": [
+    {
+      "disease": "General headache (cephalalgia)",
+      "remedy": "Henna (topical)",
+      "method": "Prepare henna paste and apply to the scalp; leave ~20-30 minutes then rinse.",
+      "dose": "Topical layer as needed",
+      "timing": "During headache; repeat until relief",
+      "source": "Natural Healing with the Medicine of the Prophet (Ibn al-Qayyim). Also found in Tib-e-Nabvi.",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Henna_Powder.jpg",
+      "remedy_description": "Henna is a fine greenish-brown powder made from dried leaves of the Lawsonia inermis plant. It has a faint earthy scent and, when mixed into a paste, forms a reddish-brown dye used topically. More images: https://commons.wikimedia.org/wiki/Category:Henna"
+    },
+    {
+      "disease": "Migraine / Hemicrania",
+      "remedy": "Aromatic inhalations (e.g., narcissus scent) and rest",
+      "method": "Smell narcissus or other aromatic plants; rest in a dark, quiet place",
+      "dose": "Inhale as needed; no strict quantity given in text",
+      "timing": "At onset of one-sided headache",
+      "source": "Natural Healing with the Medicine of the Prophet (Narcissus entry)",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Narcissus_flower.jpg",
+      "remedy_description": "Aromatic flowers like Narcissus are fragrant bulbs with showy petals and a central trumpet; they have a sweet floral smell and are used for inhalation therapies. More images: https://commons.wikimedia.org/wiki/Category:Narcissus"
+    },
+    {
+      "disease": "Nasal/brain congestion treated by snuff (su'it)",
+      "remedy": "Powdered Indian aloe (Qust) mixed with alum and myrrh seeds as sniffing powder",
+      "method": "Grind to fine powder, moisten lightly and dry. Dissolve or moisten when needed and sniff while lying on back with head extended.",
+      "dose": "A small pinch per application",
+      "timing": "When congestion/uvula symptoms present; repeat until improvement",
+      "source": "Natural Healing with the Medicine of the Prophet — sniff remedies for throat/uvula",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Saussurea_costus_roots.jpg",
+      "remedy_description": "Indian costus (Qust or Saussurea costus) is a brown woody aromatic root used medicinally; it is fibrous, earthy-bitter in taste and often powdered for inhalation. More images: https://commons.wikimedia.org/wiki/Category:Costus"
+    }
+  ]
+}

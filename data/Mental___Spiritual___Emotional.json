@@ -1,0 +1,25 @@
+{
+  "body_part": "Mental / Spiritual / Emotional",
+  "diseases": [
+    {
+      "disease": "Melancholy, depression, spiritual malaise",
+      "remedy": "Qur'an recitation, prayer, remembrance (zikr); honey as physical adjunct",
+      "method": "Regular spiritual practice and recitation; optionally use honey as tonic (1–2 tbsp in water)",
+      "dose": "Spiritual practice daily; honey 1 cup with 1–2 tbsp if used physically",
+      "timing": "Daily regimen; honey in morning supportive",
+      "source": "Natural Healing with the Medicine of the Prophet — emphasis on Qur'an as remedy; honey entries",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Al-Quran.jpg",
+      "remedy_description": "Quran recitation and remembrance are spiritual practices; combined with honey as a physical tonic, they form a holistic approach. More images: https://commons.wikimedia.org/wiki/Category:Quran"
+    },
+    {
+      "disease": "Amativeness / obsessive passion ('ishq)",
+      "remedy": "Spiritual discipline, piety, behavioral modification, dietary advice",
+      "method": "Engage in remembrance, counsel, adjust diet and behavior; seek spiritual remedies",
+      "dose": "Behavioral/spiritual program (no fixed dose)",
+      "timing": "Ongoing until stabilization",
+      "source": "Natural Healing with the Medicine of the Prophet — Section on Amativeness",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Al-Quran.jpg",
+      "remedy_description": "Spiritual discipline and piety involve prayer, remembrance, and behavioral change; visual depictions often include religious texts and serene settings. More images: https://commons.wikimedia.org/wiki/Category:Quran"
+    }
+  ]
+}

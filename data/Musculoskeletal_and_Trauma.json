@@ -1,0 +1,25 @@
+{
+  "body_part": "Musculoskeletal & Trauma",
+  "diseases": [
+    {
+      "disease": "Traumatic wounds & bleeding",
+      "remedy": "Clean water, papyrus ash, rest; cauterization only in specific circumstances historically",
+      "method": "Wash wound, apply papyrus ash, use cauterization only as last resort by skilled practitioner",
+      "dose": "Topical as needed; cauterization as per expert",
+      "timing": "Immediate wound care, follow-up per healing",
+      "source": "Natural Healing with the Medicine of the Prophet — Wound care and cauterization sections",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Papyrus_plant.jpg",
+      "remedy_description": "Initial wound care emphasizes clean water and, historically, papyrus ash for clotting; papyrus is a tall green reed producing ash when burned. More images: https://commons.wikimedia.org/wiki/Category:Cyperus_papyrus"
+    },
+    {
+      "disease": "General wound infection prevention and care",
+      "remedy": "Hygiene, washing with water, simple topical remedies",
+      "method": "Maintain hygiene, wash with water; apply simple topical agents like honey if appropriate",
+      "dose": "Case dependent",
+      "timing": "During wound management",
+      "source": "Natural Healing with the Medicine of the Prophet",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Handwashing_technique.jpg",
+      "remedy_description": "Hygiene practices like handwashing use soap and water; images typically show hands under running water. More images: https://commons.wikimedia.org/wiki/Category:Handwashing"
+    }
+  ]
+}

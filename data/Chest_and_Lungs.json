@@ -1,0 +1,25 @@
+{
+  "body_part": "Chest & Lungs",
+  "diseases": [
+    {
+      "disease": "Pleurisy and chest inflammation",
+      "remedy": "Indian aloe and hot medicines historically used; supportive rest and diet",
+      "method": "Inhalation, topical or internal hot medicines as historically cited; use supportive diet and rest",
+      "dose": "Traditional remedies not always quantified; follow narrative instructions or consult professional",
+      "timing": "Per episode and physician guidance",
+      "source": "Natural Healing with the Medicine of the Prophet — mentions in pleurisy sections",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Saussurea_costus_roots.jpg",
+      "remedy_description": "Costus root (Indian aloe/Qust) appears as woody brown roots with an earthy-bitter taste; often used with warming preparations. More images: https://commons.wikimedia.org/wiki/Category:Costus"
+    },
+    {
+      "disease": "General productive cough",
+      "remedy": "Honey and warm drinks",
+      "method": "Take honey in warm water to ease expectoration and soothe throat",
+      "dose": "1–2 tbsp honey in warm water per cup; repeat as needed",
+      "timing": "As needed; often morning or on empty stomach for effect",
+      "source": "Natural Healing with the Medicine of the Prophet — honey references",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Warm drinks sweetened with honey are aromatic, soothing, and slightly viscous, commonly used to ease coughs and digestive discomfort. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    }
+  ]
+}

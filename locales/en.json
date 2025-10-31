@@ -1,0 +1,18 @@
+{
+  "app_title": "Tibb-e-Nabvi Explorer",
+  "subtitle": "Traditional remedies — visual edition",
+  "search_placeholder": "Search disease or remedy...",
+  "loading": "Loading…",
+  "select_prompt": "Select a body part to begin or search above.",
+  "reload": "Reload Data",
+  "download": "Download JSON",
+  "details": "Details",
+  "more_images": "More images",
+  "tip": "Tip: place this HTML file in the same folder as the dataset JSON files.",
+  "built": "Built for exploration • Data: Tibb-e-Nabvi dataset",
+  "no_image": "No image",
+  "no_matches": "No matches found for your search.",
+  "source": "Source",
+  "dose": "Dose",
+  "timing": "Timing"
+}

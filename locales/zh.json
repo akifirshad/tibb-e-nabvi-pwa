@@ -1,0 +1,18 @@
+{
+  "app_title": "先知医学探索器",
+  "subtitle": "传统疗法 — 可视版",
+  "search_placeholder": "搜索疾病或疗法...",
+  "loading": "正在加载…",
+  "select_prompt": "选择一个身体部位开始或在上方搜索。",
+  "reload": "重新加载数据",
+  "download": "下载 JSON",
+  "details": "详细",
+  "more_images": "更多图片",
+  "tip": "提示：将此 HTML 文件放在与数据集 JSON 文件相同的文件夹中。",
+  "built": "用于探索 • 数据：Tibb-e-Nabvi 数据集",
+  "no_image": "无图片",
+  "no_matches": "未找到匹配项。",
+  "source": "来源",
+  "dose": "剂量",
+  "timing": "时序"
+}

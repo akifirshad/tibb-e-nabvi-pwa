@@ -1,0 +1,25 @@
+{
+  "body_part": "Reproductive & Urogenital",
+  "diseases": [
+    {
+      "disease": "Menstrual sluggishness / uterine obstruction (historical descriptions)",
+      "remedy": "Honey as solvent and stimulant; dietary moderation",
+      "method": "Use honey to open pores and assist menstrual flow; follow humoral advice",
+      "dose": "1–2 tbsp honey in warm water; applied case-by-case",
+      "timing": "When appropriate per traditional guidance",
+      "source": "Natural Healing with the Medicine of the Prophet — honey properties (eases menstrual discharge)",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Honey as a solvent appears as a smooth golden liquid; used historically to aid digestion and stimulate bowel movements. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    },
+    {
+      "disease": "Urinary sluggishness / dropsy-related urinary issues",
+      "remedy": "Diuretics, laxatives, camel milk (historical)",
+      "method": "Use dietary diuretics and laxatives; historically use camel products",
+      "dose": "Case dependent; historical mentions of small daily quantities",
+      "timing": "Until regular urination restored",
+      "source": "Natural Healing with the Medicine of the Prophet — Dropsy section",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Camel_milk_in_a_glass.jpg",
+      "remedy_description": "Camel milk is a thin white liquid; in traditional texts it's mentioned alongside diuretics and laxatives for dropsy treatment. More images: https://commons.wikimedia.org/wiki/Category:Camel_milk"
+    }
+  ]
+}

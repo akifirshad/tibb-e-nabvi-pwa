@@ -1,0 +1,25 @@
+{
+  "body_part": "Eyes",
+  "diseases": [
+    {
+      "disease": "Conjunctivitis / Ophthalmia",
+      "remedy": "Rest, hygiene; diluted honey as mild salve",
+      "method": "Avoid rubbing; rest; apply a very small, diluted amount of natural honey as a salve if needed",
+      "dose": "A tiny drop or thin smear; conservative use advised",
+      "timing": "Once or twice daily until healed; primary treatment is rest and avoidance of aggravation",
+      "source": "Natural Healing with the Medicine of the Prophet — Treatment of Ophthalmia. Also referenced in Tib-e-Nabvi.",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Honey is a golden, viscous liquid produced by bees with a sweet floral taste and sticky texture; diluted honey can be used as a mild topical salve. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    },
+    {
+      "disease": "Eye irritation from systemic humoral imbalance",
+      "remedy": "Dietary regulation, rest, humoral balancing",
+      "method": "Adjust diet, abstain from irritants, rest eyes and body",
+      "dose": "Behavioral/therapeutic (no fixed dose)",
+      "timing": "During active symptoms",
+      "source": "Natural Healing with the Medicine of the Prophet — Ophthalmia discussion",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Healthy_food.jpg",
+      "remedy_description": "A balanced diet includes a variety of grains, fruits, vegetables and proteins; visually it appears colorful and varied, promoting general health. More images: https://commons.wikimedia.org/wiki/Category:Healthy_food"
+    }
+  ]
+}

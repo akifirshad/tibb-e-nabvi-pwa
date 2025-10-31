@@ -1,0 +1,25 @@
+{
+  "body_part": "Systemic / Infectious / Public Health",
+  "diseases": [
+    {
+      "disease": "Plague / epidemic disease",
+      "remedy": "Quarantine/avoidance and faith/spiritual measures",
+      "method": "Do not enter a plague area; if plague occurs where you are, do not flee; maintain hygiene and spiritual practices",
+      "dose": "Behavioral (no substance)",
+      "timing": "During outbreak",
+      "source": "Natural Healing with the Medicine of the Prophet — Section on Plague; Hadiths recorded in Bukhari & Muslim. Also referenced in Tib-e-Nabvi.",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Al-Quran.jpg",
+      "remedy_description": "Spiritual measures include Quran recitation and prayer; the Quran is a bound holy book often shown with rich bindings and Arabic script. More images: https://commons.wikimedia.org/wiki/Category:Quran"
+    },
+    {
+      "disease": "General contagion prevention",
+      "remedy": "Hygiene, limited contact, faith and appropriate care",
+      "method": "Limit unnecessary contact, maintain hygiene, care for sick while protecting oneself appropriately",
+      "dose": "Behavioral",
+      "timing": "When contagion risk present",
+      "source": "Natural Healing with the Medicine of the Prophet — sections on contagion",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Handwashing_technique.jpg",
+      "remedy_description": "Limited contact and hygiene are emphasized to prevent contagion; handwashing images are common depictions of such practices. More images: https://commons.wikimedia.org/wiki/Category:Handwashing"
+    }
+  ]
+}

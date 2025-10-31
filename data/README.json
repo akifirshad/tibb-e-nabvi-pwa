@@ -1,0 +1,13 @@
+{
+  "project": "Tibb-e-Nabvi Natural Healing Dataset (Visual Edition)",
+  "new_fields": {
+    "remedy_image_url": "A single royalty-free image URL (Wikimedia Commons preferred) representing the remedy item.",
+    "remedy_description": "A 2-4 sentence descriptive text about the remedy's appearance, taste, texture, and a 'More images' link."
+  },
+  "notes": [
+    "Each unique remedy has one primary image assigned; compound remedies use the primary image for the first/main ingredient.",
+    "Image sources prioritized Wikimedia Commons; Pixabay/Pexels used if Wikimedia lacked images.",
+    "All images are royalty-free; verify licenses when re-using in commercial products.",
+    "This dataset is educational and not medical advice."
+  ]
+}

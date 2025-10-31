@@ -1,0 +1,18 @@
+{
+  "app_title": "Explorateur Tibb-e-Nabvi",
+  "subtitle": "Remèdes traditionnels — édition visuelle",
+  "search_placeholder": "Rechercher maladie ou remède...",
+  "loading": "Chargement…",
+  "select_prompt": "Sélectionnez une partie du corps pour commencer ou recherchez ci-dessus.",
+  "reload": "Recharger les données",
+  "download": "Télécharger JSON",
+  "details": "Détails",
+  "more_images": "Plus d'images",
+  "tip": "Astuce : placez ce fichier HTML dans le même dossier que les fichiers JSON.",
+  "built": "Conçu pour l'exploration • Données : dataset Tibb-e-Nabvi",
+  "no_image": "Pas d'image",
+  "no_matches": "Aucun résultat correspondant trouvé.",
+  "source": "Source",
+  "dose": "Dose",
+  "timing": "Moment"
+}

@@ -1,0 +1,35 @@
+{
+  "body_part": "Skin & Soft Tissue",
+  "diseases": [
+    {
+      "disease": "Acute wounds & bleeding",
+      "remedy": "Papyrus ash applied to wound to stop bleeding; clean water wash",
+      "method": "Burn papyrus straw to ashes; apply a thin layer to wound after washing to help clotting",
+      "dose": "Thin layer; reapply until bleeding controlled",
+      "timing": "Immediately post-injury",
+      "source": "Natural Healing with the Medicine of the Prophet — Uhud wound account (Fatimah & ‘Ali)",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Papyrus_plant.jpg",
+      "remedy_description": "Papyrus is a tall green reed with triangular stems; when burned it produces fine ash historically used for wound treatment. More images: https://commons.wikimedia.org/wiki/Category:Cyperus_papyrus"
+    },
+    {
+      "disease": "Boils, pimples, abscesses",
+      "remedy": "Narcissus flower cooked with bitter vetch and honey (topical)",
+      "method": "Cook narcissus with bitter vetch (karsana) and honey; apply paste to lesion until it ripens and drains",
+      "dose": "Topical application once daily until drainage",
+      "timing": "Repeat morning/evening until resolved",
+      "source": "Natural Healing with the Medicine of the Prophet — Narcissus entry (treatment of pimples and boils)",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Narcissus_flower.jpg",
+      "remedy_description": "Narcissus is a bulbous flower with white petals and a central yellow trumpet; fragrant and used both ornamentally and medicinally. More images: https://commons.wikimedia.org/wiki/Category:Narcissus"
+    },
+    {
+      "disease": "Skin parasites (lice)",
+      "remedy": "Raw natural honey applied to hair/scalp",
+      "method": "Spread honey over hair and scalp as ointment, leave short duration, rinse",
+      "dose": "Apply thoroughly; frequency 1–2 times weekly until cleared",
+      "timing": "Weekly until parasites cleared",
+      "source": "Natural Healing with the Medicine of the Prophet — Benefits of Honey",
+      "remedy_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Honey_in_a_jar.jpg",
+      "remedy_description": "Raw honey applied to hair is sticky and viscous, appearing amber-gold; used as a natural conditioner and for lice removal. More images: https://commons.wikimedia.org/wiki/Category:Honey"
+    }
+  ]
+}

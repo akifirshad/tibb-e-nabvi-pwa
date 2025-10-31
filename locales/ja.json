@@ -1,0 +1,18 @@
+{
+  "app_title": "ティッブ・エ・ナブヴィ探索",
+  "subtitle": "伝統療法 — ビジュアル版",
+  "search_placeholder": "病気または治療法を検索...",
+  "loading": "読み込み中…",
+  "select_prompt": "開始するには体の部位を選ぶか、上で検索してください。",
+  "reload": "データを再読み込み",
+  "download": "JSONをダウンロード",
+  "details": "詳細",
+  "more_images": "画像をもっと見る",
+  "tip": "ヒント: このHTMLファイルをデータセットのJSONファイルと同じフォルダに置いてください。",
+  "built": "探索のために作成 • データ: Tibb-e-Nabvi データセット",
+  "no_image": "画像なし",
+  "no_matches": "検索に一致する結果がありません。",
+  "source": "出典",
+  "dose": "用量",
+  "timing": "タイミング"
+}
